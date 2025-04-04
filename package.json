@@ -1,0 +1,26 @@
+{
+    "name": "isaas.app",
+    "private": true,
+    "main": "./apps/backend/lib/index.js",
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "lint": "turbo run lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "check-types": "turbo run check-types"
+    },
+    "devDependencies": {
+        "prettier": "^3.5.0",
+        "turbo": "^2.5.0",
+        "typescript": "5.7.3"
+    },
+    "engines": {
+        "node": "22"
+    },
+    "packageManager": "npm@10.9.2",
+    "workspaces": [
+        "apps/*",
+        "packages/*",
+        "packages/*/*"
+    ]
+}

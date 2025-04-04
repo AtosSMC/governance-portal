@@ -1,0 +1,29 @@
+{
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.log": true,
+        "**/.next": true,
+        "**/.turbo": true,
+        "**/coverage": true,
+        "**/dist": true,
+        "**/turbo": true
+    },
+    "material-icon-theme.folders.associations": {
+        "adapter": "pipe",
+        "dto": "less",
+        "eslint-config": "rules",
+        "external": "tools",
+        "facade": "element",
+        "model": "json",
+        "provider": "config",
+        "query": "database",
+        "shared-ui": "shared",
+        "typescript-config": "typescript",
+        "usecase": "class",
+        "user": "admin"
+    },
+    "code-runner.executorMap": {
+        "typescript": "npx tsx"
+    }
+}
