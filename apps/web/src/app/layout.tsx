@@ -7,8 +7,8 @@ const font = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "iSaaS",
-  description: "Intelligent Ideas for Intelligent People",
+  title: "Atos Customer Governance Portal",
+  description: "Slogan",
 };
 
 export default function RootLayout({

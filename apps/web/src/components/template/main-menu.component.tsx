@@ -53,7 +53,7 @@ function Group(props: MainMenuGroupProps) {
     return (
         <div {...others} className={cn('flex flex-col gap-2', props.className)}>
             {title && (
-                <span className={cn('text-sm text-zinc-600 font-semibold uppercase', titleClassName)}>{title}</span>
+                <span className={cn('text-sm text-zinc-300 font-semibold uppercase', titleClassName)}>{title}</span>
             )}
             <div className={cn('flex flex-col gap-0.5', props.className)}>{props.children}</div>
         </div>

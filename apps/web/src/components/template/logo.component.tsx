@@ -10,12 +10,12 @@ export default function Logo(props: LogoProps) {
     const content = (
         <h1
             className={cn(
-                'bg-gradient-to-r from-zinc-200 to-zinc-600',
+                'bg-blue-500',
                 'bg-clip-text text-transparent text-xl font-bold',
                 props.className,
             )}
         >
-            iSaaS
+            Atos 
         </h1>
     )
 

@@ -6,10 +6,10 @@ export default function ExternalHeader() {
         <header className="flex justify-between items-center h-16 w-full px-7">
             <Logo href="/" />
             <div className="flex items-center gap-6">
-                <Link href="/login" noStyle>
+                <Link href="/login" className='text-blue-900'>
                     Log In
                 </Link>
-                <Link href="/signup">Sign Up</Link>
+                {/* <Link href="/signup">Sign Up</Link> */}
             </div>
         </header>
     )

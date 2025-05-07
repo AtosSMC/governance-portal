@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils'
-import { IconHome, IconLayoutGrid, IconPlayerPlay, IconSearch } from '@tabler/icons-react'
+import { IconHome, IconLayoutGrid, IconPlayerPlay, IconCheck } from '@tabler/icons-react'
 import { MainMenu } from './main-menu.component'
 import { usePathname } from 'next/navigation'
 import Drawer from '../shared/drawer.component'
@@ -41,16 +41,16 @@ export default function InternalPage(props: InternalPageProps) {
     }
 
     const sidebar = (
-        <Sidebar className="relative flex border-r border-zinc-900 bg-[url('/sidebar-bg.jpg')] bg-cover bg-center">
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-black/90 via-black to-black"></div>
+        <Sidebar className="relative flex border-r border-zinc-900 bg-cover bg-center">
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b bg-blue-900"></div>
             <div className="flex flex-col w-full gap-7 z-20">
                 <Logo href="/dashboard" />
                 <MainMenu.Root className="gap-6">
                     {item('/dashboard', IconHome, 'Dashboard')}
-                    <MainMenu.Group title="Options" titleClassName="px-4">
-                        {item('/others/a', IconSearch, 'Page A')}
-                        {item('/others/b', IconLayoutGrid, 'Page B')}
-                        {item('/others/c', IconPlayerPlay, 'Page C')}
+                    <MainMenu.Group title="Tools" titleClassName="px-4">
+                        {item('/tools/ticket_quality', IconCheck, 'Ticket Quality')}
+                        {item('/tools/b', IconLayoutGrid, 'Análise de Tendências')}
+                        {item('/tools/c', IconPlayerPlay, 'Análise de Propostas (RFP)')}
                     </MainMenu.Group>
                 </MainMenu.Root>
             </div>

@@ -13,7 +13,7 @@ function Label(props: DropdownPrimitive.DropdownMenuLabelProps) {
     return (
         <DropdownPrimitive.Label
             {...props}
-            className={cn('text-sm text-zinc-600 font-semibold', 'px-6 py-2.5', props.className)}
+            className={cn('text-sm text-zinc-300 font-semibold', 'px-6 py-2.5', props.className)}
         />
     )
 }
@@ -24,7 +24,7 @@ function Item(props: DropdownPrimitive.DropdownMenuItemProps) {
             {...props}
             className={cn(
                 'flex items-center gap-3 rounded-md',
-                'px-6 py-2 outline-hidden text-zinc-400 cursor-pointer',
+                'px-6 py-2 outline-hidden text-zinc-200 cursor-pointer',
                 'hover:bg-zinc-900 hover:text-white',
                 props.className,
             )}

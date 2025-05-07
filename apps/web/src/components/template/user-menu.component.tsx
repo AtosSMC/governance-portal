@@ -30,7 +30,7 @@ export default function UserMenu() {
             <DropdownMenu.Content
                 className={`
                     border border-zinc-700 p-2 rounded-md
-                    bg-black mx-4 mt-2
+                    bg-blue-900 mx-4 mt-2
                 `}
             >
                 <DropdownMenu.Group>
